@@ -98,14 +98,3 @@ MiPlay_PCAudioMessage: Connect successed, start recv.
 ## 期望结果
 
 即使服务端启动超过 200 ms，客户端也应等待或重试，最终建立 IPC；失败时应有限重试并停止，不应进入无限重启循环。
-
-## 可补充材料
-
-如需进一步定位，可以提供：
-
-- `AudioShare\PCAudiodll` 控制端日志
-- `AudioShare\mpa` 服务端日志
-- 进程 PID 变化记录
-- 对应版本 DLL/EXE 的文件版本和 SHA-256
-
-提交日志前建议检查并删除账号、设备 ID、设备名称等个人信息。
